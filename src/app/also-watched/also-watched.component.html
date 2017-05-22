@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-12 col-sm-6 films">
+        <h4 class="films--header"> {{ title }}</h4>
+        <div class="film" *ngFor="let film of films" data-id="{{ film._id }}">
+            <a [routerLink]="['/film-details', film._id]">
+                <img src="{{ film.posterSmall }}" class="center-block" alt="{{ film.name }}">
+                <div class="year text-left small">{{ film.year }}</div>
+                <div class="title text-left" title="{{ film.name }}">{{ film.name }}</div>
+            </a>
+        </div>
+    </div>
+</div>

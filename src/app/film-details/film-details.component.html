@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="filmpage--poster">
+                <img src="{{ film?.poster }}" width="320" height="480" class="center-block" alt="{{ film?.name }}">
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-6">
+            <h1 class="filmpage--header">{{ film?.name }}</h1>
+            <div class="filpage--information">
+                <p>{{ film?.synopsis }}</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="header">{{ i18n.actors }}</div>
+                    <ul>
+                        <li *ngFor="let actor of film?.actors">{{ actor }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="header">{{ i18n.director }}</div>
+                    <ul>
+                        <li>Silvestr Stallone</li>
+                        <li *ngFor="let director of film?.directors">{{ director }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="header">{{ i18n.produsers }}</div>
+                    <ul>
+                        <li *ngFor="let produser of film?.produsers">{{ produser }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3" *ngIf="film?.details">
+                    <div class="header">{{ i18n.details }}</div>
+                    <ul>
+                        <li *ngFor="let detail of film?.details">{{ detail }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-info" (click)="clickWatch()">{{ i18n.button.watch }}</button>
+                <button class="btn btn-success" (click)="clickAdd(film)">{{ i18n.button.add }}</button>
+                <button class="btn btn-danger" (click)="clickRemove(film, true)">{{ i18n.button.remove }}</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Also watched block -->
+    <app-also-watched></app-also-watched>
+    <!-- END Also watched block -->
+</div>
+<!--   films block end -->

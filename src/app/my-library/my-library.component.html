@@ -1,0 +1,16 @@
+<!--   MyLibrary block-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-sm-6 films">
+            <h4 class="films--header">{{ title }}</h4>
+            <div class="film" *ngFor="let filmNew of getFilmInLib()" data-id="{{ filmNew._id }}">
+                <a [routerLink]="['/film-details', filmNew._id]" >
+                    <img src="{{ filmNew.posterSmall }}" class="center-block" alt="{{ filmNew.name }}">
+                    <div class="year text-left small">{{ filmNew.year }}</div>
+                    <div class="title text-left" title="{{ filmNew.name }}">{{ filmNew.name }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   MyLibrary block end -->
