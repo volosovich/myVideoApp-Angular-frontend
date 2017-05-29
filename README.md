@@ -1,9 +1,14 @@
 # MyVideoApp
 
+It is the test Angular app, which I developed for learning objectives.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
 ## Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+For normal use, first need to start backend. Please download it and install from this [link](https://github.com/TODO)
 
 ## Code scaffolding
 
@@ -23,5 +28,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
+
+To get more help or fix bugs, please create issue or send me email to [andreyvolosovich@gmail.com](mailto:andreyvolosovich@gmail.com)
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
