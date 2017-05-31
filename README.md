@@ -18,7 +18,7 @@ npm start
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-**REMEMBER!** For normal use, first need to start backend. Please download it and install from this [link](https://github.com/TODO)
+**REMEMBER!** For normal use, first need to start backend. Please download it and install from this [link](https://github.com/volosovich/myVideoApp-backend.git)
 
 ## Code scaffolding
 
