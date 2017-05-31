@@ -4,11 +4,21 @@ It is the test Angular app, which I developed for learning objectives.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
+## Installation
+
+For installing all dependencies run commands below:
+
+```
+git clone https://github.com/volosovich/myVideoApp-Angular-frontend.git
+npm install
+npm start
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-For normal use, first need to start backend. Please download it and install from this [link](https://github.com/TODO)
+**REMEMBER!** For normal use, first need to start backend. Please download it and install from this [link](https://github.com/TODO)
 
 ## Code scaffolding
 
@@ -25,7 +35,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Before running the e2e-tests make sure you are enable backend with mockdata and it correctly work.
 
 ## Further help
 

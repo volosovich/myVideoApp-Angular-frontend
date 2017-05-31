@@ -29,7 +29,6 @@ export class MainPageComponent implements OnInit {
   }
 
   getNewFilms() {
-    // console.log('VOLOS', this._filmsService.getNewFilms());
       this._filmsService.getNewFilms().subscribe(films => this.filmsNew = films);
   }
   getPopularFilms() {

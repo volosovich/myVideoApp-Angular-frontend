@@ -16,7 +16,7 @@ import {
   HttpModule,
   XHRBackend
 } from '@angular/http';
-// import { Router } from '@angular/router';
+
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -61,15 +61,10 @@ describe('FilmsService', () => {
     TestBed.configureTestingModule({
       providers: [
         FilmsService,
-        // Http,
-        // ConnectionBackend,
         BaseRequestOptions,
         MockBackend,
-        // Router,
         {provide: RequestOptions, useClass: BaseRequestOptions},
         {provide: ConnectionBackend, useClass: MockBackend},
-        // { provide: XHRBackend, useClass: MockBackend },
-        //
         {
           provide: Http,
           useFactory: (backend: MockBackend, defaultOptions: BaseRequestOptions) => {
@@ -89,12 +84,7 @@ describe('FilmsService', () => {
         ]),
       ],
       declarations: [
-        // AppComponent,
-        // MainPageComponent,
-        // NavigationComponent,
         SearchPageComponent,
-        // FilmDetailsComponent,
-        // AlsoWatchedComponent,
       ],
     });
   });
@@ -104,7 +94,6 @@ describe('FilmsService', () => {
   }));
 
   it('should exists local var', inject([FilmsService], (service: FilmsService) => {
-    // console.log('VOLOS', expect(service));
     expect(service.filmsInLib).toBeTruthy();
     expect(service.searchedFilms).toBeTruthy();
     expect(service.url).toContain('http://');
